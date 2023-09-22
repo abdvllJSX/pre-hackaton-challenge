@@ -1,0 +1,9 @@
+@function toRem($value) {
+    $remValue: (calc($value / 10.5)) + rem;
+    @return $remValue;
+}
+@mixin md-screen {
+    @media (max-width: 40px) {
+        @content;
+    }
+}

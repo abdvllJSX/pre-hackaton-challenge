@@ -1,0 +1,188 @@
+@import "../../styles/main.scss";
+
+.hero-container {
+    width: 100vw;
+    position: relative;
+    padding-bottom: toRem(105);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+
+    .star1 {
+        width: toRem(26);
+        height: toRem(32);
+        position: absolute;
+        z-index: 5;
+        top: toRem(209);
+        left: toRem(189);
+        flex-shrink: 0;
+    }
+
+    .star2 {
+        @extend .star1;
+        left: toRem(571);
+        top: toRem(746);
+    }
+
+    .star3 {
+        @extend .star1;
+        left: toRem(821);
+        top: toRem(267);
+    }
+
+    .creative {
+        width: toRem(53);
+        height: toRem(73);
+        flex-shrink: 0;
+        position: absolute;
+        top: toRem(293);
+        left: toRem(644);
+    }
+
+    .purple-lense-flare1 {
+        top: 0;
+        position: absolute;
+        z-index: -1;
+        width: toRem(1086);
+        height: ToRem(836);
+        flex-shrink: 0;
+        background: lightgray, -0.25px 0px / 130.652% 100% no-repeat;
+        background-blend-mode: hard-light;
+    }
+
+    .metrix {
+        position: absolute;
+        // z-index: -1;
+        top: toRem(181);
+        width: toRem(1164);
+        height: toRem(801);
+        flex-shrink: 0;
+    }
+
+    .purple-lense-flare2 {
+        width: toRem(961);
+        height: toRem(994);
+        right: 0;
+        z-index: -1;
+        flex-shrink: 0;
+        position: absolute;
+
+    }
+
+    .model {
+        position: absolute;
+        z-index: -2;
+        right: -3.6rem;
+        top: toRem(267);
+        width: toRem(828);
+        height: toRem(715);
+        background: lightgray, 50% / cover no-repeat;
+        background-blend-mode: luminosity;
+    }
+
+    .orbit {
+        width: toRem(667);
+        height: toRem(641);
+        position: absolute;
+        right: toRem(64);
+        top: toRem(257);
+        flex-shrink: 0;
+    }
+
+    .chain {
+        width: toRem(86);
+        height: toRem(86);
+        flex-shrink: 0;
+    }
+    .ex {
+        width: toRem(58);
+        height: toRem(58);
+        flex-shrink: 0;
+    }
+
+    .hero {
+        position: relative;
+
+        .hero-content {
+            padding-left: toRem(128);
+            padding-top: toRem(199);
+
+            &__header {
+                font-size: toRem(80);
+                font-family: $secondary-font;
+            }
+
+            &__paragraph {
+                margin-top: toRem(8);
+                margin-bottom: toRem(41);
+                font-size: 1.9rem;
+                width: 52.5rem;
+                color: #FFF;
+                font-weight: 400;
+                line-height: 166%;
+
+            }
+
+            &__btn {
+                margin-bottom: toRem(77);
+
+                @include md-screen {}
+            }
+
+            &__countdown {
+                color: #FFF;
+                font-family: $number-font;
+                font-size: 6rem;
+                height: toRem(85);
+                font-weight: 400;
+                line-height: 133%;
+
+                /* 85.12px */
+                @include md-screen {}
+
+                .subscript {
+                    color: #FFF;
+                    font-family: $primary;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    line-height: 133%;
+
+                    /* 18.62px */
+                    @include md-screen {}
+                }
+            }
+        }
+
+    }
+
+    .right-hero__content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        top: 3.05rem;
+        right: 5.24rem;
+
+        &-header {
+            font-size: toRem(36);
+            max-width: 70.67rem;
+            margin-top: 2rem;
+            font-family: $main-font;
+            font-style: italic;
+            font-weight: 700;
+
+            @include md-screen {
+                font-size: 1.6rem;
+                margin-top: 1rem;
+            }
+        }
+
+        .underline {
+            width: 24.29rem;
+        }
+
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+    }
+}

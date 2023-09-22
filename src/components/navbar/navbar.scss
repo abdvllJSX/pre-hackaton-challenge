@@ -1,0 +1,40 @@
+@import "../../styles/main.scss";
+
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: toRem(67) toRem(128) toRem(30);
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        font-size: 3rem;
+        font-family: $secondary-font;
+        font-weight: 700;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        column-gap: 11.5rem;
+
+        &-items {
+            display: flex;
+            column-gap: 5rem;
+            .nav-links {
+                color: #FFF;
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.nav-line {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.18);
+}
