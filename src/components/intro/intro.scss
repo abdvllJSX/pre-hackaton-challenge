@@ -4,6 +4,7 @@
     position: relative;
     width: 100%;
     background: #140D27;
+
     .flare4 {
         width: toRem(1037);
         height: toRem(948);
@@ -30,6 +31,9 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
     position: relative;
     padding: toRem(62) toRem(169) toRem(78) toRem(230);
+    @include mobile{
+        padding: 0;
+    }
 
     .star3 {
         width: toRem(21);
@@ -37,6 +41,10 @@
         position: absolute;
         top: toRem(223);
         left: toRem(203);
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .star4 {
@@ -45,6 +53,10 @@
         height: toRem(36);
         bottom: toRem(365);
         right: toRem(182);
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .arrow1 {
@@ -54,6 +66,10 @@
         transform: rotate(-70.92deg);
         bottom: toRem(61.5);
         left: toRem(715);
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .intro-wrapper {
@@ -61,22 +77,51 @@
         align-items: center;
         column-gap: toRem(106);
 
+        @include mobile {
+            flex-direction: column;
+            justify-items: center;
+            row-gap: toRemM(58);
+        }
+
         .big-idea {
             width: toRem(490);
             height: toRem(477);
             flex-shrink: 0;
+
+            @include mobile {
+                width: toRemM(264.004);
+                height: toRemM(257);
+                flex-shrink: 0;
+            }
+
         }
 
         .intro-content {
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &__header {
                 font-size: toRem(32);
                 width: toRem(398);
+                @include mobile{
+                    font-size: toRemM(20);
+                    text-align: center;
+                }
             }
 
             &__paragraph {
                 margin-top: toRem(16);
                 width: toRem(535);
+
+                @include mobile {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: toRemM(13);
+                    width: toRemM(321);
+                    font-weight: 400;
+                    line-height: toRemM(27.5);
+                    /* 211.538% */
+                }
             }
         }
     }

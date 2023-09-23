@@ -48,6 +48,15 @@ h3 {
     color: #FFF;
     font-size: toRem(32);
     font-weight: 700;
+
+    @include mobile {
+        color: #FFF;
+        text-align: center;
+        font-size: toRemM(20);
+        font-weight: 700;
+        /* 26.6px */
+    }
+
     /* 0px */
 }
 
