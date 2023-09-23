@@ -32,7 +32,7 @@
     position: relative;
     padding: toRem(62) toRem(169) toRem(78) toRem(230);
     @include mobile{
-        padding: 0;
+        padding: toRem(27.72) 0 toRem(106) 0;
     }
 
     .star3 {

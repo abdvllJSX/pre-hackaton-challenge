@@ -5,38 +5,69 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
     position: relative;
 
+    @include mobile {
+        padding-left: 0;
+    }
+
     .star-5 {
         width: toRem(26);
         height: toRem(32);
         position: absolute;
         top: toRem(405);
         left: toRem(741);
+
+        @include mobile {
+            display: none;
+        }
     }
+
     .star6 {
         width: toRem(26);
         height: toRem(32);
         position: absolute;
         top: toRem(116);
         left: toRem(439);
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .rules-wrapper {
         display: flex;
         column-gap: toRem(48);
 
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+
         .rules-content {
-            &__header{
+            &__header {
                 margin-top: toRem(138);
             }
+
             .rules-paragraph {
                 margin-top: toRem(16);
                 width: toRem(533);
+
+                @include mobile {
+                    color: #FFF;
+                    font-size: toRem(13);
+                    font-weight: 400;
+                    /* 211.538% */
+                }
             }
         }
 
         .rules-image {
             width: toRem(664);
             height: toRem(664);
+
+            @include mobile {
+                width: toRem(294);
+                height: toRem(382);
+                flex-shrink: 0;
+            }
         }
     }
 }
