@@ -1,0 +1,160 @@
+@import "../../styles/main.scss";
+
+.partners {
+    padding: toRem(114) toRem(128);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+    .partners-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .partners-top {
+            text-align: center;
+
+            &__ {
+                margin-top: toRem(22);
+            }
+        }
+    }
+
+    .bottom {
+        margin-top: toRem(65);
+        display: flex;
+        width: 100%;
+        border-radius: 5px;
+        padding: toRem(144) toRem(179);
+        border: 1px solid #D434FE;
+        background: rgba(255, 255, 255, 0.01);
+        flex-shrink: 0;
+
+        .col1 {
+            .logo-warpper {
+                display: flex;
+                justify-content: space-between;
+                width: toRem(288.91);
+                height: toRem(139.68);
+
+                .hspacer {
+                    width: 4px;
+                    height: toRem(112.476);
+                    background: #D434FE;
+                }
+
+                .hspacer2 {
+                    align-self: end;
+                    width: 4px;
+                    height: toRem(112.476);
+                    background: #D434FE;
+                }
+            }
+
+            .spacer {
+                width: toRem(257.298);
+                height: toRem(4);
+                background: #D434FE;
+            }
+        }
+
+        .col2 {
+            display: flex;
+            flex-direction: column;
+
+            .logo-warpper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: toRem(321.25);
+                height: toRem(139.68);
+
+                .hspacer {
+                    width: 4px;
+                    height: toRem(112.476);
+                    background: #D434FE;
+                }
+
+                .hspacer2 {
+                    align-self: end;
+                    width: 4px;
+                    height: toRem(112.476);
+                    background: #D434FE;
+                }
+            }
+
+            .spacer {
+                align-self: center;
+                width: toRem(257.298);
+                height: toRem(4);
+                background: #D434FE;
+            }
+        }
+
+        .col3 {
+            display: flex;
+            flex-direction: column;
+
+            .logo-warpper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: toRem(288.91);
+                height: toRem(139.68);
+            }
+
+            .spacer {
+                align-self: flex-end;
+                width: toRem(257.298);
+                height: toRem(4);
+                background: #D434FE;
+            }
+        }
+
+    }
+}
+
+.logo1 {
+    width: toRem(120.562);
+    height: toRem(113.946);
+    margin-left: toRem(61.75);
+    margin-bottom: toRem(25.73);
+    flex-shrink: 0;
+}
+
+.logo2 {
+    width: toRem(147.027);
+    height: toRem(109.535);
+    margin-top: toRem(22.79);
+    flex-shrink: 0;
+    margin-left: toRem(59.55);
+}
+
+.logo3 {
+    width: toRem(213.189);
+    height: toRem(40.432);
+    margin-left: toRem(49.99);
+    flex-shrink: 0;
+}
+
+.logo5 {
+    width: toRem(131.589);
+    margin-left: toRem(93.36);
+    margin-bottom: toRem(32.36);
+    height: toRem(107.33);
+    flex-shrink: 0;
+}
+
+.logo6 {
+    width: toRem(231);
+    height: toRem(45);
+    margin-left: toRem(49.01);
+    margin-top: toRem(67.32);
+    flex-shrink: 0;
+}
+
+.logo4 {
+    width: toRem(204);
+    height: toRem(45);
+    margin-left: toRem(54.4);
+    margin-top: toRem(67.32);
+    flex-shrink: 0;
+}

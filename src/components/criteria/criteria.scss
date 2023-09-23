@@ -1,0 +1,56 @@
+@import "../../styles/main.scss";
+
+
+.criteria-container {
+    position: relative;
+
+    .c-f-1 {
+        position: absolute;
+        z-index: -1;
+        width: toRem(1037);
+        height: toRem(948);
+        top: toRem(217);
+        left: 0;
+        flex-shrink: 0;
+    }
+
+    .c-f-2 {
+        width: toRem(1037);
+        height: toRem(948);
+        flex-shrink: 0;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: toRem(453);
+    }
+}
+
+.criteria {
+    padding-top: toRem(78);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+    .criteria-wrapper {
+        display: flex;
+        padding-bottom: toRem(171);
+        column-gap: toRem(53);
+        justify-content: center;
+
+        .criteria-image {
+            margin-top: toRem(127);
+            width: toRem(710);
+            height: toRem(587);
+        }
+
+        .criteria-content {
+            &__header {
+                margin-bottom: toRem(21);
+            }
+
+            &-paragraphs {
+                width: toRem(533);
+                margin-bottom: toRem(22);
+            }
+        }
+    }
+
+}

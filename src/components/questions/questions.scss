@@ -1,0 +1,43 @@
+@import "../../styles/main.scss";
+
+.questions {
+    padding-top: toRem(122);
+    padding-left: toRem(215);
+    padding-right: toRem(101);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+
+    .question-wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .question-content {
+            &__header {
+                margin-bottom: toRem(16);
+            }
+
+            &__paragraph {
+                margin-bottom: toRem(68);
+                width: toRem(342);
+            }
+
+            &__info {
+                &__container {
+                    width: toRem(427);
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: toRem(13);
+                    border-bottom: 1px solid $green;
+                    margin-bottom: toRem(25);
+                }
+            }
+        }
+
+        .question-image {
+            width: toRem(741);
+            height: toRem(741);
+            flex-shrink: 0;
+        }
+    }
+}

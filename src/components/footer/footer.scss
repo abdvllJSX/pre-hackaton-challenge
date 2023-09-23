@@ -1,0 +1,54 @@
+@import "../../styles/main.scss";
+
+footer {
+    display: flex;
+   flex-direction: column;
+   padding-top: toRem(83);
+   padding-bottom: toRem(54);
+//    align-items: center;
+
+    .footer-top {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: toRem(53);
+        .coll-1 {
+            &__paragraph {
+                margin-top: toRem(14);
+                margin-bottom: toRem(70);
+            }
+        }
+
+        .coll-2 {
+            ul{
+                margin-bottom: toRem(6);
+                li{
+                    margin-bottom: toRem(12);
+                    &:last-child{
+                        display: flex;
+                        margin-right: torem(16);
+                        column-gap: toRem(19);
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .coll-3{
+            p:first-of-type{
+                margin-bottom: toRem(18);
+            }
+            .contact{
+                display: flex;
+                column-gap: toRem(16);
+                .address{
+                    width: toRem(89);
+                    font-size: toRem(12);
+                }
+            }
+        }
+    }
+
+    .footer-bottom{
+        text-align: center;
+    }
+}

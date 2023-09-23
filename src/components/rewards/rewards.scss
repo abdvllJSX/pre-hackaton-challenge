@@ -1,0 +1,95 @@
+@import "../../styles/main.scss";
+
+.rewards {
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-top: toRem(74);
+        padding-bottom: toRem(149);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        column-gap: toRem(37);
+
+        .rewards-image {
+            margin-top: toRem(101);
+            width: toRem(548);
+            height: toRem(482);
+        }
+
+        .rewards-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .rewards-content-top {
+
+            }
+
+            .rewards-medals {
+                display: flex;
+                column-gap: toRem(30);
+                margin-top: toRem(230);
+
+                .prizes {
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: center;
+                    width: toRem(212);
+                    height: toRem(296);
+                    border: 1px solid #D434FE;
+                    background: rgba(212, 52, 254, 0.12);
+                    position: relative;
+
+                    &:nth-child(2) {
+                        width: toRem(212);
+                        height: toRem(347);
+                    }
+
+                    &-image {
+                        width: toRem(179);
+                        height: toRem(180);
+                        flex-shrink: 0;
+                        position: absolute;
+                        right: toRem(16);
+                        bottom: toRem(200);
+                    }
+
+                    .gold {
+                        position: absolute;
+                        width: toRem(296);
+                        height: toRem(296);
+                        bottom: toRem(198);
+                        right: toRem(-40);
+                    }
+
+                    .position {
+                        color: #FFF;
+                        font-size: toRem(36);
+                        font-weight: 700;
+                        // line-height: toRem(77.904);
+                        /* 77.904px */
+                    }
+
+                    .runner {
+                        color: #FFF;
+                        font-size: toRem(24);
+                        font-weight: 600;
+                        //  line-height: toRem(51.936);
+                        /* 51.936px */
+                    }
+
+                    .prize {
+                        color: #D434FE;
+                        font-size: toRem(32);
+                        font-style: normal;
+                        font-weight: 700;
+                        margin-bottom: toRem(33);
+                        line-height: toRem(69.248);
+                        /* 69.248px */
+                    }
+                }
+            }
+        }
+    }
+}

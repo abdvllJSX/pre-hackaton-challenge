@@ -1,0 +1,137 @@
+@import "../../styles/main.scss";
+
+.timeline {
+    padding: toRem(72) toRem(140) toRem(109) toRem(139);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    
+    &-wrapper {
+
+        .timeline-header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            &__paragraph {
+                width: toRem(346);
+                text-align: center;
+            }
+        }
+
+        .timeline-content {
+            display: flex;
+            justify-content: center;
+            margin-top: toRem(91);
+
+            .timeline-content__left {
+                margin-top: toRem(121);
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    &__header {
+                        font-size: toRem(24);
+                        font-weight: 700;
+                        font-family: $main-font;
+                        text-align: right;
+                        margin-bottom: toRem(12);
+                    }
+
+                    &__paragraph {
+                        text-align: right;
+                        max-width: toRem(436);
+
+                    }
+                }
+            }
+
+            &__center {
+                display: flex;
+                margin-left: toRem(86);
+                margin-right: toRem(98);
+                flex-direction: column;
+                align-items: center;
+
+                .line {
+                    width: toRem(4);
+                    height: toRem(86);
+                    background: #D434FE;
+
+                    &:first-child {
+                        height: toRem(137);
+                    }
+                }
+
+                .circle {
+                    margin-top: toRem(11);
+                    margin-bottom: toRem(20);
+                    width: toRem(53);
+                    height: toRem(53);
+                    display: grid;
+                    place-content: center;
+                    border-radius: toRem(26.5);
+                    background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+                }
+            }
+
+            .timeline-content__right {
+                margin-top: toRem(166);
+
+                &__text {
+
+                    &__header {
+                        font-size: toRem(24);
+                        font-weight: 700;
+                        margin-bottom: toRem(12);
+                        max-width: toRem(511);
+                    }
+
+                    &__paragraph {
+                        width: toRem(436);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.text-1 {
+    margin-bottom: toRem(120);
+}
+
+.text-2 {
+    margin-bottom: toRem(82);
+}
+
+.text-3 {
+    margin-bottom: toRem(106);
+}
+
+.text-4 {
+    margin-bottom: toRem(104);
+}
+
+.text-5 {
+    margin-bottom: toRem(101);
+}
+
+.text-7 {
+    margin-bottom: toRem(102);
+}
+
+.text-8 {
+    margin-bottom: toRem(107);
+}
+
+.text-9 {
+    margin-bottom: toRem(91);
+}
+
+.text-10 {
+    margin-bottom: toRem(81);
+}
+
+.text-11 {
+    margin-bottom: toRem(90);
+}

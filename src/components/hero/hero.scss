@@ -6,6 +6,11 @@
     padding-bottom: toRem(105);
     border: 1px solid rgba(255, 255, 255, 0.18);
 
+    @include mobile {
+        padding-bottom: toRemM(0);
+        border: none;
+    }
+
 
     .star1 {
         width: toRem(26);
@@ -15,18 +20,30 @@
         top: toRem(209);
         left: toRem(189);
         flex-shrink: 0;
+
+        @include mobile {
+            display: none
+        }
     }
 
     .star2 {
         @extend .star1;
         left: toRem(571);
         top: toRem(746);
+
+        @include mobile {
+            display: none
+        }
     }
 
     .star3 {
         @extend .star1;
         left: toRem(821);
         top: toRem(267);
+
+        @include mobile {
+            display: none
+        }
     }
 
     .creative {
@@ -36,6 +53,14 @@
         position: absolute;
         top: toRem(293);
         left: toRem(644);
+
+        @include mobile {
+            top: toRemM(158);
+            left: toRemM(279);
+            width: toRem(18);
+            height: toRem(26);
+            flex-shrink: 0;
+        }
     }
 
     .purple-lense-flare1 {
@@ -47,6 +72,11 @@
         flex-shrink: 0;
         background: lightgray, -0.25px 0px / 130.652% 100% no-repeat;
         background-blend-mode: hard-light;
+
+        @include mobile {
+            width: toRemM(396);
+            height: toRemM(442);
+        }
     }
 
     .metrix {
@@ -56,6 +86,10 @@
         width: toRem(1164);
         height: toRem(801);
         flex-shrink: 0;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .purple-lense-flare2 {
@@ -66,6 +100,9 @@
         flex-shrink: 0;
         position: absolute;
 
+        @include mobile {
+            display: none;
+        }
     }
 
     .model {
@@ -77,6 +114,15 @@
         height: toRem(715);
         background: lightgray, 50% / cover no-repeat;
         background-blend-mode: luminosity;
+
+        @include mobile {
+            // border: 1px solid red;
+            width: toRemM(419.669);
+            height: toRemM(362.395);
+            flex-shrink: 0;
+            left: 0;
+            top: toRemM(469.84);
+        }
     }
 
     .orbit {
@@ -86,29 +132,68 @@
         right: toRem(64);
         top: toRem(257);
         flex-shrink: 0;
+
+        @include mobile {
+            // border: 1px solid red;
+            width: toRemM(338.067);
+            top: toRem(464.77);
+            right: toRem(46.15);
+            height: toRemM(324.889);
+        }
     }
 
     .chain {
         width: toRem(86);
         height: toRem(86);
         flex-shrink: 0;
+
+        @include mobile {
+            width: toRem(32.797);
+            height: toRem(32.797);
+            flex-shrink: 0;
+        }
     }
+
     .ex {
         width: toRem(58);
         height: toRem(58);
         flex-shrink: 0;
+
+        @include mobile {
+            width: toRemM(22.119);
+            height: toRemM(22.119);
+            flex-shrink: 0;
+        }
     }
 
     .hero {
         position: relative;
 
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
         .hero-content {
             padding-left: toRem(128);
             padding-top: toRem(199);
 
+            @include mobile {
+                width: 100%;
+                padding-left: 0;
+                padding-top: toRemM(103);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             &__header {
                 font-size: toRem(80);
                 font-family: $secondary-font;
+
+                @include mobile {
+                    font-size: toRemM(32);
+                }
             }
 
             &__paragraph {
@@ -120,12 +205,22 @@
                 font-weight: 400;
                 line-height: 166%;
 
+                @include mobile {
+                    margin-top: toRemM(9);
+                    margin-bottom: toRemM(24);
+                    text-align: center;
+                    width: toRemM(264);
+                    font-size: toRemM(13);
+                    /* 21.58px */
+                }
+
             }
 
             &__btn {
                 margin-bottom: toRem(77);
-
-                @include md-screen {}
+                @include mobile{
+                    margin-bottom: toRemM(14.98);
+                }
             }
 
             &__countdown {
@@ -137,7 +232,11 @@
                 line-height: 133%;
 
                 /* 85.12px */
-                @include md-screen {}
+                @include mobile {
+                    color: #FFF;
+                    font-size: toRemM(48);
+                    /* 63.84px */
+                }
 
                 .subscript {
                     color: #FFF;
@@ -146,8 +245,14 @@
                     font-weight: 400;
                     line-height: 133%;
 
+                    @include mobile {
+                        font-size: toRemM(14);
+                        font-style: normal;
+                        font-weight: 400;
+                        /* 18.62px */
+                    }
+
                     /* 18.62px */
-                    @include md-screen {}
                 }
             }
         }
@@ -162,6 +267,15 @@
         top: 3.05rem;
         right: 5.24rem;
 
+        @include mobile {
+            padding-left: toRemM(39);
+            padding-right: toRem(33);
+            align-items: center;
+            top: 0;
+            right: 0;
+        }
+
+
         &-header {
             font-size: toRem(36);
             max-width: 70.67rem;
@@ -170,18 +284,29 @@
             font-style: italic;
             font-weight: 700;
 
-            @include md-screen {
-                font-size: 1.6rem;
-                margin-top: 1rem;
+            @include mobile {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: toRemM(16);
+                font-style: italic;
+                font-weight: 700;
+                line-height: normal;
             }
         }
 
         .underline {
             width: 24.29rem;
+
+            @include mobile {
+                width: toRemM(115);
+                height: 7px;
+                flex-shrink: 0;
+            }
         }
 
     }
-    .flex{
+
+    .flex {
         display: flex;
         align-items: center;
     }

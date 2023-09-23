@@ -19,6 +19,9 @@ body {
 
 html {
     font-size: 0.694vw;
+    @include mobile{
+        font-size: 2.66vw;
+    }
 }
 
 

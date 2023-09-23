@@ -1,0 +1,103 @@
+@import "../../styles/main.scss";
+
+.policy-wrapper {
+    padding: toRem(169) toRem(147) toRem(187) toRem(167);
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+
+    .policy {
+        display: flex;
+        column-gap: toRem(50);
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+
+            &__header {
+                .sub-paragraph {
+                    color: rgba(255, 255, 255, 0.75);
+                    font-size: toRem(14);
+                    font-weight: 400;
+                    margin-top: toRem(17);
+                    line-height: toRem(27.5);
+                    /* 196.429% */
+                }
+
+                &__paragraph {
+                    color: #FFF;
+                    max-width: toRem(428);
+                    margin-top: toRem(30);
+                    font-size: toRem(14);
+                    font-weight: 400;
+                    line-height: 188.4%;
+                    /* 26.376px */
+                }
+            }
+
+            &__card {
+                width: toRem(569);
+                display: flex;
+                flex-direction: column;
+                margin-top: toRem(69);
+                border: 1px solid #D434FE;
+                background: rgba(217, 217, 217, 0.03);
+                padding: toRem(69) toRem(39) 0 toRem(72);
+                height: toRem(608);
+
+                &__main-paragraph {
+                    color: #FFF;
+                    font-size: toRem(14);
+                    max-width: toRem(425);
+                    font-weight: 400;
+                    line-height: 216.4%;
+                    margin-bottom: toRem(24);
+                    /* 30.296px */
+                }
+
+                .header-paragraph {
+                    font-size: toRem(14);
+                    font-weight: 700;
+                    line-height: 216.4%;
+                    /* 30.296px */
+                }
+
+                .policy-content__card__bottom {
+                    margin-top: toRem(18);
+
+                    .content {
+                        display: flex;
+                        column-gap: toRem(14);
+                        margin-bottom: toRem(18);
+
+                        .checked {
+                            border: 1px solid red;
+                            width: toRem(17);
+                            height: toRem(17);
+                        }
+
+                        .checked-paragraph {
+                            width: toRem(401);
+                        }
+                    }
+
+                }
+            }
+
+            &-image {
+                width: toRem(559);
+                height: toRem(749);
+            }
+        }
+    }
+
+    .shield {
+        position: absolute;
+        z-index: -1;
+        width: toRem(530);
+        height: toRem(648);
+        bottom: toRem(471);
+        right: toRem(123);
+    }
+
+}

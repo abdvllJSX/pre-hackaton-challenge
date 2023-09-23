@@ -1,11 +1,14 @@
 import bigidea from "../../../public/big-idea.png";
 import "./intro.scss";
 import Rules from "../rules/rules";
+import Criteria from "../criteria/criteria";
 import star3 from "../../../public/star-3.png";
 import star4 from "../../../public/star-4.png";
 import flare4 from "../../../public/flare4.png";
 import flare3 from "../../../public/Purple-Lens-Flare-PNG3.png";
 import arrow1 from "../../../public/arrow-1.png";
+import Question from "../questions/questions";
+import Timeline from "../timeline/timeline";
 
 export default function Intro() {
     return (
