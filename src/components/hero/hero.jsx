@@ -7,7 +7,7 @@ import metrix from "../../../public/metrix.png"
 import man from "../../../public/man-md.png";
 import star1 from "../../../public/star-1.png";
 import star2 from "../../../public/star-2.png";
-import creative from "../../../public/creative-1.png";
+import creative from "../../../public/creative1.png";
 import chain from "../../../public/chain.png";
 import explotion from "../../../public/ex.png"
 
