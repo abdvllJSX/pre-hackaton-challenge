@@ -10,7 +10,6 @@ import star2 from "../../../public/star-2.png";
 import creative from "../../../public/creative-1.png";
 import chain from "../../../public/chain.png";
 import explotion from "../../../public/ex.png"
-import { Link } from "react-router-dom";
 
 export default function Hero() {
     return (
