@@ -1,4 +1,4 @@
-import winwise from "../../../public/winwise.png";
+import winwise from "../../../public/wiswise.png";
 import wisper from "../../../public/wisper.png";
 import liberty from "../../../public/Liberty1.png"
 import liberty2 from "../../../public/Liberty2.png";
