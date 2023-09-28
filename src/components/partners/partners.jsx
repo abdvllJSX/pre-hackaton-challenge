@@ -4,12 +4,20 @@ import liberty from "../../../public/Liberty1.png"
 import liberty2 from "../../../public/Liberty2.png";
 import paybox from "../../../public/paybox.png"
 import visualplus from "../../../public/vizual-plus.png"
+import PartnersFlare from "../../../public/partners-flare.png";
+import PartnersFlare2 from "../../../public/partners-flare2.png";
 import "./partners.scss";
 import Policy from "../policy/policy";
 
 export default function Partners() {
     return (
         <div className="partners-container">
+            <div className="partners-flare">
+                <img src={PartnersFlare} alt="" />
+            </div>
+            <div className="partners-flare2">
+                <img src={PartnersFlare2} alt="" />
+            </div>
             <section className="partners">
                 <div className="partners-wrapper">
                     <div className="partners-top">
@@ -17,8 +25,7 @@ export default function Partners() {
                             Partners and Sponsors
                         </h3>
                         <p className="paragraphs partners-top__paragraph">
-                            Getlinked Hackathon 1.0 is honored to have the following major<br></br>
-                            companies as its partners and sponsors
+                            Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors
                         </p>
                     </div>
                     <div className="bottom">

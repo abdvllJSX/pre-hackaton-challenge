@@ -2,11 +2,19 @@ import trophy from "../../../public/trophy.png";
 import gold from "../../../public/gold_medal.png";
 import silver from "../../../public/silver_medal.png";
 import bronze from "../../../public/bronze_medal.png";
+import flare4 from "../../../public/guildlines-flare.png";
+import flare3 from "../../../public/Purple-Lens-Flare-PNG3.png";
 import "./rewards.scss";
 
 export default function Reward() {
     return (
-        <div className="Reward-container">
+        <div className="Reward-container" id="section2">
+             <div className="rewaard-flare1">
+                <img src={flare3} alt="" />
+            </div>
+            <div className="rewaard-flare2">
+                <img src={flare4} alt="" />
+            </div>
             <section className="rewards">
                 <div className="rewards-wrapper">
                     <div className="rewards-image">
@@ -16,7 +24,7 @@ export default function Reward() {
                     <div className="rewards-content">
                         <div className="rewards-content-top">
                             <h3 className="sub-header">Prizes and<br></br><span className="green">Rewards</span></h3>
-                            <p className="paragraphs">Highlights 0f the prizes or rewards for winners and<br></br>for participants.</p>
+                            <p className="paragraphs rewards-content-top__paragraph">Highlights 0f the prizes or rewards for winners and for participants.</p>
                         </div>
                         <div className="rewards-medals">
                             <div className="prizes">

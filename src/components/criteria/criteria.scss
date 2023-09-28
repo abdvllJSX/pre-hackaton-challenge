@@ -12,6 +12,10 @@
         top: toRem(217);
         left: 0;
         flex-shrink: 0;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .c-f-2 {
@@ -22,12 +26,19 @@
         z-index: -1;
         right: 0;
         top: toRem(453);
+
+        @include mobile {
+            display: none;
+        }
     }
 }
 
 .criteria {
     padding-top: toRem(78);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    @include mobile{
+        padding-top: toRem(74);
+    }
 
     .criteria-wrapper {
         display: flex;
@@ -35,20 +46,45 @@
         column-gap: toRem(53);
         justify-content: center;
 
+        @include mobile {
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: toRem(58.56);
+        }
+
         .criteria-image {
             margin-top: toRem(127);
             width: toRem(710);
             height: toRem(587);
+
+            @include mobile {
+                width: toRem(332);
+                margin-top: toRem(0);
+                height: toRem(275);
+            }
         }
 
         .criteria-content {
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             &__header {
                 margin-bottom: toRem(21);
+                @include mobile{
+                    font-size: toRem(13);
+                }
             }
 
             &-paragraphs {
                 width: toRem(533);
                 margin-bottom: toRem(22);
+                @include mobile{
+                    width: toRemM(299);
+                    font-size: toRem(13);
+                    text-align: center;
+                }
             }
         }
     }

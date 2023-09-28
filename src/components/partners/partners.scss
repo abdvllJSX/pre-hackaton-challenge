@@ -1,8 +1,36 @@
 @import "../../styles/main.scss";
 
+
+
+.partners-container {
+    position: relative;
+
+    .partners-flare {
+        position: absolute;
+        z-index: -1;
+        right: toRem(706);
+        width: toRem(1037);
+        height: toRem(948);
+        bottom: (174);
+    }
+
+    .partners-flare2 {
+        position: absolute;
+        z-index: -1;
+        left: toRem(945);
+        width: toRem(1037);
+        height: toRem(948);
+        top: toRem(320);
+    }
+}
+
 .partners {
     padding: toRem(114) toRem(128);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+    @include mobile {
+        padding: toRem(41) toRem(27) toRem(104) toRem(30);
+    }
 
     .partners-wrapper {
         display: flex;
@@ -10,10 +38,21 @@
         align-items: center;
 
         .partners-top {
+
             text-align: center;
 
-            &__ {
+            &__paragraph {
+                width: toRem(452);
                 margin-top: toRem(22);
+
+                @include mobile {
+                    width: toRem(286);
+
+                    margin-top: toRem(5);
+                    font-size: toRem(12);
+                    font-weight: 400;
+                    line-height: 20.5px;
+                }
             }
         }
     }
@@ -28,6 +67,10 @@
         background: rgba(255, 255, 255, 0.01);
         flex-shrink: 0;
 
+        @include mobile {
+            padding: toRem(38.21) toRem(45);
+        }
+
         .col1 {
             .logo-warpper {
                 display: flex;
@@ -35,17 +78,32 @@
                 width: toRem(288.91);
                 height: toRem(139.68);
 
+                @include mobile {
+                    width: toRem(76.66);
+                    height: toRem(37.11);
+                }
+
                 .hspacer {
-                    width: 4px;
+                    width: toRem(4);
                     height: toRem(112.476);
                     background: #D434FE;
+
+                    @include mobile {
+                        width: toRem(2);
+                        height: toRem(29.844);
+                    }
                 }
 
                 .hspacer2 {
                     align-self: end;
-                    width: 4px;
+                    width: toRem(4);
                     height: toRem(112.476);
                     background: #D434FE;
+
+                    @include mobile {
+                        width: toRem(2);
+                        height: toRem(29.844);
+                    }
                 }
             }
 
@@ -53,6 +111,11 @@
                 width: toRem(257.298);
                 height: toRem(4);
                 background: #D434FE;
+
+                @include mobile {
+                    width: toRem(68.271);
+                    height: toRem(2);
+                }
             }
         }
 
@@ -67,17 +130,32 @@
                 width: toRem(321.25);
                 height: toRem(139.68);
 
+                @include mobile {
+                    width: toRem(85.24);
+                    height: toRem(37.08);
+                }
+
                 .hspacer {
-                    width: 4px;
+                    width: toRem(4);
                     height: toRem(112.476);
                     background: #D434FE;
+
+                    @include mobile {
+                        width: toRem(2);
+                        height: toRem(29.844);
+                    }
                 }
 
                 .hspacer2 {
                     align-self: end;
-                    width: 4px;
+                    width: toRem(4);
                     height: toRem(112.476);
                     background: #D434FE;
+
+                    @include mobile {
+                        width: toRem(2);
+                        height: toRem(29.844);
+                    }
                 }
             }
 
@@ -86,6 +164,11 @@
                 width: toRem(257.298);
                 height: toRem(4);
                 background: #D434FE;
+
+                @include mobile {
+                    width: toRem(68.271);
+                    height: toRem(2);
+                }
             }
         }
 
@@ -99,6 +182,11 @@
                 justify-content: space-between;
                 width: toRem(288.91);
                 height: toRem(139.68);
+
+                @include mobile {
+                    width: toRem(78.6);
+                    height: toRem(37.06);
+                }
             }
 
             .spacer {
@@ -106,6 +194,12 @@
                 width: toRem(257.298);
                 height: toRem(4);
                 background: #D434FE;
+
+                @include mobile {
+                    width: toRem(68.271);
+                    height: toRem(2);
+                }
+
             }
         }
 
@@ -118,6 +212,14 @@
     margin-left: toRem(61.75);
     margin-bottom: toRem(25.73);
     flex-shrink: 0;
+
+    @include mobile {
+        width: toRem(31.99);
+        height: toRem(30.234);
+        margin-bottom: toRem(6.83);
+        margin-left: toRem(28.28);
+
+    }
 }
 
 .logo2 {
@@ -126,6 +228,13 @@
     margin-top: toRem(22.79);
     flex-shrink: 0;
     margin-left: toRem(59.55);
+
+    @include mobile {
+        width: toRem(39.012);
+        height: toRem(29.064);
+        margin-top: toRem(6.5);
+        margin-left: toRem(21.85);
+    }
 }
 
 .logo3 {
@@ -133,6 +242,13 @@
     height: toRem(40.432);
     margin-left: toRem(49.99);
     flex-shrink: 0;
+
+    @include mobile {
+        width: toRem(56.567);
+        height: toRem(10.728);
+        margin-left: toRem(15.41);
+        margin-bottom: toRem(17.75);
+    }
 }
 
 .logo5 {
@@ -140,7 +256,13 @@
     margin-left: toRem(93.36);
     margin-bottom: toRem(32.36);
     height: toRem(107.33);
-    flex-shrink: 0;
+
+    @include mobile {
+        width: toRem(34.916);
+        height: toRem(28.479);
+        margin-left: toRem(24.77);
+        margin-bottom: toRem(8.58);
+    }
 }
 
 .logo6 {
@@ -149,6 +271,13 @@
     margin-left: toRem(49.01);
     margin-top: toRem(67.32);
     flex-shrink: 0;
+
+    @include mobile {
+        width: toRem(69);
+        height: toRem(21);
+        margin-left: toRem(9.6);
+        margin-top: toRem(5.73);
+    }
 }
 
 .logo4 {
@@ -157,4 +286,11 @@
     margin-left: toRem(54.4);
     margin-top: toRem(67.32);
     flex-shrink: 0;
+
+    @include mobile {
+        width: toRem(56.567);
+        height: toRem(10.728);
+        margin-left: toRem(16.58);
+        margin-top: toRem(8.85);
+    }
 }

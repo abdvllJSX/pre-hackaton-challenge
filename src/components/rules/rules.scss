@@ -39,11 +39,16 @@
 
         @include mobile {
             flex-direction: column-reverse;
+            align-items: center;
         }
 
         .rules-content {
             &__header {
                 margin-top: toRem(138);
+
+                @include mobile {
+                    margin-top: 0;
+                }
             }
 
             .rules-paragraph {
@@ -51,9 +56,12 @@
                 width: toRem(533);
 
                 @include mobile {
-                    color: #FFF;
+                    text-align: center;
                     font-size: toRem(13);
                     font-weight: 400;
+                    width: toRemM(300);
+                    line-height: toRemM(27.5);
+                    margin-bottom: toRem(45);
                     /* 211.538% */
                 }
             }
@@ -64,10 +72,13 @@
             height: toRem(664);
 
             @include mobile {
-                width: toRem(294);
-                height: toRem(382);
-                flex-shrink: 0;
+                display: none;
             }
+        }
+
+        .rules-image-mobile {
+            width: toRemM(294);
+            height: toRemM(382);
         }
     }
 }

@@ -1,4 +1,5 @@
 import rules from "../../../public/rules.png"
+import rulesM from "../../../public/rulesM.png"
 import "./rules.scss";
 import star5 from "../../../public/star-1.png";
 import star6 from "../../../public/star-2.png";
@@ -31,6 +32,9 @@ export default function Rules() {
                 </div>
                 <div className="rules-image">
                     <img src={rules} alt="" />
+                </div>
+                <div className="rules-image-mobile mobile">
+                    <img src={rulesM} alt="" />
                 </div>
             </div>
         </section>

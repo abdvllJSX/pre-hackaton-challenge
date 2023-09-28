@@ -11,17 +11,15 @@
 
 body {
     font-size: 1.6rem;
-    overflow-x: hidden;
     background: #150E28;
     font-family: $main-font;
     color: $white;
 }
 
 html {
+    overflow-x: hidden;
     font-size: 0.694vw;
     @include mobile{
         font-size: 2.66vw;
     }
 }
-
-

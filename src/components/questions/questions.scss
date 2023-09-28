@@ -6,11 +6,22 @@
     padding-right: toRem(101);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 
+    @include mobile {
+        padding-top: toRem(60);
+        padding-left: toRem(0);
+        padding-right: toRem(0);
+    }
+
 
     .question-wrapper {
         display: flex;
         justify-content: space-between;
         position: relative;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .question-content {
             &__header {
@@ -20,6 +31,12 @@
             &__paragraph {
                 margin-bottom: toRem(68);
                 width: toRem(342);
+
+                @include mobile {
+                    width: toRemM(294);
+                    text-align: center;
+                    margin-bottom: toRemM(45.69)
+                }
             }
 
             &__info {
@@ -29,7 +46,13 @@
                     justify-content: space-between;
                     padding-bottom: toRem(13);
                     border-bottom: 1px solid $green;
-                    margin-bottom: toRem(25);
+
+
+                    @include mobile {
+                        padding-bottom: toRem(0);
+                        align-items: last baseline;
+                        width: toRem(294);
+                    }
                 }
             }
         }
@@ -37,7 +60,14 @@
         .question-image {
             width: toRem(741);
             height: toRem(741);
-            flex-shrink: 0;
+            margin-bottom: toRem(25);
+
+            @include mobile {
+                width: toRem(327);
+                height: toRem(327);
+                margin-top: toRemM(86);
+                margin-bottom: toRem(49);
+            }
         }
     }
 }

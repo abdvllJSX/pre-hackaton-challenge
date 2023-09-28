@@ -27,6 +27,8 @@ ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
+    color: inherit;
 }
 
 .green {
@@ -67,4 +69,12 @@ h3 {
     font-weight: 400;
     line-height: toRem(27.5);
     /* 196.429% */
+}
+
+.mobile {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
 }

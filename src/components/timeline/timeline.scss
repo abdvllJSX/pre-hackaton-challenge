@@ -1,137 +1,200 @@
 @import "../../styles/main.scss";
 
 .timeline {
-    padding: toRem(72) toRem(140) toRem(109) toRem(139);
+    padding-top: toRem(72);
+    padding-bottom: toRem(109);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-    
-    &-wrapper {
 
+    @include mobile {
+        padding: toRem(0) toRem(0) toRem(0) toRem(0);
+    }
+
+    &-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .timeline-header {
             display: flex;
             align-items: center;
             flex-direction: column;
+            margin-bottom: toRem(91);
 
             &__paragraph {
                 width: toRem(346);
                 text-align: center;
+
+                @include mobile {
+                    width: toRem(292);
+                }
             }
         }
 
-        .timeline-content {
+        .timeline-content__wrapper {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            @include mobile{
+                margin-left: toRem(73);
+            }
+            // align-items: center;
+
+        }
+
+        .timeline-content__container:nth-last-child(5) {
+            @include mobile {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .timeline-content__container:nth-last-child(3) {
+            @include mobile {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .timeline-content__container:nth-last-child(1) {
+            @include mobile {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .timeline-content__container {
             display: flex;
             justify-content: center;
-            margin-top: toRem(91);
+            align-items: last baseline;
 
-            .timeline-content__left {
-                margin-top: toRem(121);
+            @include mobile {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: toRem(40);
+            }
 
-                &__text {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
+            &__left {
+                width: toRem(511);
 
-                    &__header {
-                        font-size: toRem(24);
-                        font-weight: 700;
-                        font-family: $main-font;
-                        text-align: right;
-                        margin-bottom: toRem(12);
+                @include mobile {
+                    width: fit-content;
+                }
+
+                &__header {
+                    text-align: right;
+                    font-size: toRem(24);
+                    font-weight: 700;
+
+
+                    @include mobile {
+                        font-size: toRem(12);
+                        text-align: left;
                     }
+                }
 
-                    &__paragraph {
-                        text-align: right;
-                        max-width: toRem(436);
+                &__paragraph {
+                    text-align: right;
+                    color: #FFF;
+                    font-size: toRem(14);
+                    font-weight: 400;
+                    line-height: 170.9%;
 
+                    /* 23.926px */
+                    @include mobile {
+                        font-size: toRem(12);
+                        width: toRem(270);
+                        text-align: left;
                     }
                 }
             }
 
             &__center {
                 display: flex;
-                margin-left: toRem(86);
-                margin-right: toRem(98);
                 flex-direction: column;
+                row-gap: toRem(11);
+                margin-left: toRem(86);
+                margin-right: toRem(96);
                 align-items: center;
+
+                @include mobile {
+                    position: absolute;
+                    margin-left: toRem(0);
+                    margin-right: toRem(0);
+                    left: toRem(45.68);
+                }
 
                 .line {
                     width: toRem(4);
                     height: toRem(86);
+                    margin-top: toRem(11);
                     background: #D434FE;
 
-                    &:first-child {
-                        height: toRem(137);
+                    @include mobile {
+                        width: toRem(2);
+                        margin-top: toRem(4);
+                        height: toRem(77);
+                    }
+                }
+
+                .first {
+                    width: toRem(4);
+                    height: toRem(137);
+                    background: #D434FE;
+
+                    @include mobile {
+                        width: toRem(2);
+                        height: toRem(77);
                     }
                 }
 
                 .circle {
-                    margin-top: toRem(11);
-                    margin-bottom: toRem(20);
                     width: toRem(53);
                     height: toRem(53);
                     display: grid;
                     place-content: center;
                     border-radius: toRem(26.5);
                     background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+
+                    @include mobile {
+                        width: toRem(19.32);
+                        font-size: toRem(12);
+                        height: toRem(19.32);
+                    }
                 }
             }
 
-            .timeline-content__right {
-                margin-top: toRem(166);
+            .timeline-content__container__right {
+                align-items: last baseline;
+                width: toRem(486);
 
-                &__text {
+                @include mobile {
+                    width: fit-content;
+                    align-items: left;
+                }
 
-                    &__header {
-                        font-size: toRem(24);
-                        font-weight: 700;
-                        margin-bottom: toRem(12);
-                        max-width: toRem(511);
-                    }
+                &__header {
+                    font-size: toRem(24);
+                    font-weight: 700;
 
-                    &__paragraph {
-                        width: toRem(436);
+                    @include mobile {
+                        font-size: toRem(12);
+                        text-align: left;
                     }
                 }
+
+                &__paragraph {
+                    width: toRem(436);
+                    color: #FFF;
+                    font-size: toRem(14);
+                    font-weight: 400;
+                    line-height: 170.9%;
+
+                    @include mobile {
+                        font-size: toRem(12);
+                        width: toRem(270);
+                    }
+
+                    /* 23.926px */
+                }
+
             }
         }
     }
-}
-
-.text-1 {
-    margin-bottom: toRem(120);
-}
-
-.text-2 {
-    margin-bottom: toRem(82);
-}
-
-.text-3 {
-    margin-bottom: toRem(106);
-}
-
-.text-4 {
-    margin-bottom: toRem(104);
-}
-
-.text-5 {
-    margin-bottom: toRem(101);
-}
-
-.text-7 {
-    margin-bottom: toRem(102);
-}
-
-.text-8 {
-    margin-bottom: toRem(107);
-}
-
-.text-9 {
-    margin-bottom: toRem(91);
-}
-
-.text-10 {
-    margin-bottom: toRem(81);
-}
-
-.text-11 {
-    margin-bottom: toRem(90);
 }

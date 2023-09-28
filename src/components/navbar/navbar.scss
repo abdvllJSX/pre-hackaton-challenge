@@ -9,7 +9,7 @@
     align-items: center;
 
     @include mobile {
-        padding: toRemM(34) toRemM(48) toRemM(21) toRemM(48);
+        padding: toRemM(34) toRemM(48) toRemM(21) toRemM(0);
 
     }
 
@@ -20,40 +20,42 @@
 
         @include mobile {
             font-size: toRemM(20);
+            margin-left: toRem(48);
         }
     }
 
     .nav-right {
         display: flex;
-        position: relative;
         align-items: center;
         column-gap: 11.5rem;
 
         @include mobile {
-            width: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            height: toRemM(482);
-            padding-top: toRemM(40) ;
-            padding-left: toRemM(50);
-            padding-right: toRemM(50);
-            z-index: 10;
             flex-direction: column;
+            justify-content: center;
             align-items: flex-start;
+            position: absolute;
+            padding-left: 5rem;
+            width: 100vw;
+            top: 0;
+            z-index: 11;
+            height: toRem(492);
             border-radius: 8px;
-            // border: 0.5px solid rgba(255, 255, 255, 0.04);
+            transition: all .5s ease-in-out;
             background: #150E28;
-            // backdrop-filter: blur(30px);
         }
 
         .close {
-            align-self: flex-end;
-            margin-bottom: toRemM(50);
-
+            display: none;
+            @include mobile{
+                display: block;
+                position: absolute;
+                top: 3rem;
+                right: 4rem;
+            }
         }
 
         &-items {
+            display: flex;
             column-gap: 5rem;
 
             @include mobile {
@@ -73,26 +75,40 @@
             }
         }
     }
+}
 
-    .hamburger {
+.hambuger {
+    display: none;
+    @include mobile{
         display: flex;
         align-self: flex-end;
-        flex-direction: column;
-        position: absolute;
         width: toRemM(19);
         height: toRemM(14);
         flex-shrink: 0;
-        display: none;
-
-        @include mobile {
-            display: block;
-        }
-
+        display: block;
     }
+    
 }
+
 
 .nav-line {
     width: 100%;
     height: 1px;
     background: rgba(255, 255, 255, 0.18);
+}
+
+
+
+.active-link {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+    ;
+}
+
+.activate-btn {
+    background-color: none;
+    border-radius: 4px;
+    border: 2px solid #9A39FF;
 }

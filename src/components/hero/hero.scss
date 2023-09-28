@@ -74,8 +74,7 @@
         background-blend-mode: hard-light;
 
         @include mobile {
-            width: toRemM(396);
-            height: toRemM(442);
+            display: none;
         }
     }
 
@@ -268,8 +267,7 @@
         right: 5.24rem;
 
         @include mobile {
-            padding-left: toRemM(39);
-            padding-right: toRem(33);
+            width: 100%;
             align-items: center;
             top: 0;
             right: 0;

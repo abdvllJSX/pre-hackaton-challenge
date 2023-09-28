@@ -2,45 +2,98 @@
 
 footer {
     display: flex;
-   flex-direction: column;
-   padding-top: toRem(83);
-   padding-bottom: toRem(54);
-//    align-items: center;
+    flex-direction: column;
+    padding-top: toRem(83);
+    padding-bottom: toRem(54);
+    background: #100B20;
+
+    //    align-items: center;
+    @include mobile {
+        align-items: center;
+    }
 
     .footer-top {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: toRem(53);
+
+        @include mobile {
+            flex-direction: column;
+        }
+
         .coll-1 {
+            @include mobile {
+                margin-bottom: toRem(32);
+            }
+
+            &__header {
+                @include mobile {
+                    text-align: left;
+                }
+            }
+
             &__paragraph {
+                width: toRemM(400);
                 margin-top: toRem(14);
                 margin-bottom: toRem(70);
+
+                @include mobile {
+                    width: toRem(271);
+                    font-size: toRem(12);
+                    line-height: 172.4%;
+                    margin-bottom: toRem(39);
+                    /* 20.688px */
+                }
+            }
+
+            &__paragraph2 {
+                font-size: toRem(12);
             }
         }
 
         .coll-2 {
-            ul{
+            ul {
                 margin-bottom: toRem(6);
-                li{
+
+                @include mobile {
+                    margin-bottom: toRem(64);
+                }
+
+                li {
                     margin-bottom: toRem(12);
-                    &:last-child{
+
+                    @include mobile {
+                        font-size: toRem(12);
+                        margin-bottom: toRem(11);
+                    }
+
+                    &:last-child {
                         display: flex;
                         margin-right: torem(16);
                         column-gap: toRem(19);
                         align-items: center;
+                        margin-top: toRem(18);
+                    }
+
+                    .icon {
+                        width: toRem(24);
+                        height: toRem(24);
+                        flex-shrink: 0;
                     }
                 }
             }
         }
 
-        .coll-3{
-            p:first-of-type{
+        .coll-3 {
+            p:first-of-type {
                 margin-bottom: toRem(18);
             }
-            .contact{
+
+            .contact {
                 display: flex;
                 column-gap: toRem(16);
-                .address{
+
+                .address {
                     width: toRem(89);
                     font-size: toRem(12);
                 }
@@ -48,7 +101,7 @@ footer {
         }
     }
 
-    .footer-bottom{
+    .footer-bottom {
         text-align: center;
     }
 }

@@ -1,5 +1,30 @@
 @import "../../styles/main.scss";
 
+.Reward-container {
+    position: relative;
+
+    .rewaard-flare2 {
+        position: absolute;
+        z-index: -1;
+        width: toRem(1037);
+        height: toRem(948);
+        @include mobile{
+            display: none;
+        }
+    }
+
+    .rewaard-flare1 {
+        position: absolute;
+        z-index: -1;
+        width: toRem(404);
+        height: toRem(959);
+        right: 0;
+        @include mobile{
+            display: none;
+        }
+    }
+}
+
 .rewards {
     &-wrapper {
         display: flex;
@@ -9,10 +34,24 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.18);
         column-gap: toRem(37);
 
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: toRem(89.27);
+            position: relative;
+        }
+
         .rewards-image {
             margin-top: toRem(101);
             width: toRem(548);
             height: toRem(482);
+
+            @include mobile {
+                width: toRem(321);
+                margin-top: toRem(216);
+                height: toRem(282);
+            }
         }
 
         .rewards-content {
@@ -21,13 +60,29 @@
             align-items: center;
 
             .rewards-content-top {
+                @include mobile {
+                    position: absolute;
+                    top: toRem(74);
+                }
 
+                &__paragraph {
+                    width: toRem(370);
+
+                    @include mobile {
+                        text-align: center;
+                        width: toRem(277);
+                    }
+                }
             }
 
             .rewards-medals {
                 display: flex;
                 column-gap: toRem(30);
                 margin-top: toRem(230);
+
+                @include mobile {
+                    margin-top: toRem(127.85);
+                }
 
                 .prizes {
                     border-radius: 8px;
@@ -41,9 +96,19 @@
                     background: rgba(212, 52, 254, 0.12);
                     position: relative;
 
+                    @include mobile {
+                        width: toRemM(90.007);
+                        height: toRemM(125.671);
+                    }
+
                     &:nth-child(2) {
                         width: toRem(212);
                         height: toRem(347);
+
+                        @include mobile {
+                            width: toRem(90.007);
+                            height: toRem(147.323);
+                        }
                     }
 
                     &-image {
@@ -53,6 +118,15 @@
                         position: absolute;
                         right: toRem(16);
                         bottom: toRem(200);
+
+                        @include mobile {
+                            width: toRem(75.997);
+                            bottom: toRem(83.4);
+                            right: toRem(2.12);
+                            height: toRem(76.421);
+                            flex-shrink: 0;
+                        }
+
                     }
 
                     .gold {
@@ -61,22 +135,43 @@
                         height: toRem(296);
                         bottom: toRem(198);
                         right: toRem(-40);
+
+                        @include mobile {
+                            width: toRem(125.671);
+                            bottom: toRem(84.06);
+                            right: toRem(-20);
+                            height: toRem(125.671);
+                        }
                     }
 
                     .position {
                         color: #FFF;
                         font-size: toRem(36);
                         font-weight: 700;
+
                         // line-height: toRem(77.904);
                         /* 77.904px */
+                        @include mobile {
+                            font-size: toRem(12);
+                            font-weight: 700;
+                            line-height: 216.4%;
+                            /* 25.968px */
+                        }
                     }
 
                     .runner {
                         color: #FFF;
                         font-size: toRem(24);
                         font-weight: 600;
+
                         //  line-height: toRem(51.936);
                         /* 51.936px */
+                        @include mobile {
+                            font-size: toRem(12);
+                            font-weight: 600;
+                            // line-height: 216.4%;
+                            /* 25.968px */
+                        }
                     }
 
                     .prize {
@@ -86,7 +181,18 @@
                         font-weight: 700;
                         margin-bottom: toRem(33);
                         line-height: toRem(69.248);
+
+                        @include mobile {
+                            margin-bottom: toRemM(18);
+                        }
+
                         /* 69.248px */
+                        @include mobile {
+                            font-size: toRem(14);
+                            font-weight: 700;
+                            line-height: 216.4%;
+                            /* 30.296px */
+                        }
                     }
                 }
             }

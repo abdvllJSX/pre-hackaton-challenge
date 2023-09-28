@@ -13,6 +13,11 @@
         background: lightgray, -204.25px 7px / 119.817% 104.852% no-repeat;
         background-blend-mode: hard-light;
         position: absolute;
+
+        @include mobile {
+            display: none;
+        }
+
     }
 
     .flare3 {
@@ -23,6 +28,13 @@
         right: 0;
         background: lightgray, -155.25px -32px / 307.55% 103.65% no-repeat;
         position: absolute;
+
+        @include mobile {
+            display: none;
+            width: toRem(404);
+            height: toREm(435);
+            flex-shrink: 0;
+        }
     }
 }
 
@@ -31,7 +43,8 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
     position: relative;
     padding: toRem(62) toRem(169) toRem(78) toRem(230);
-    @include mobile{
+
+    @include mobile {
         padding: toRem(27.72) 0 toRem(106) 0;
     }
 
@@ -99,11 +112,17 @@
         .intro-content {
             display: flex;
             flex-direction: column;
-            align-items: center;
+
+            @include mobile {
+                align-items: center;
+
+            }
+
             &__header {
                 font-size: toRem(32);
                 width: toRem(398);
-                @include mobile{
+
+                @include mobile {
                     font-size: toRemM(20);
                     text-align: center;
                 }

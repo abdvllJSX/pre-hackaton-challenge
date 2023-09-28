@@ -8,7 +8,7 @@ import star10 from "../../../public/star-2.png"
 
 export default function Question() {
     return (
-        <section className="questions">
+        <section className="questions" id="section3">
             
             <div className="question-wrapper">
                 <div className="question-content">

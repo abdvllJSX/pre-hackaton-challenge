@@ -5,33 +5,72 @@
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 
+    .policy-flare {
+        right: toRem(671);
+        top: toRem(522);
+        position: absolute;
+        width: toRem(1037);
+        height: toRem(948);
+        z-index: -1;
+    }
+
+    @include mobile {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     .policy {
         display: flex;
         column-gap: toRem(50);
 
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+
         &-content {
             display: flex;
             flex-direction: column;
 
+            @include mobile {
+                align-items: center;
+
+            }
+
             &__header {
+
                 .sub-paragraph {
                     color: rgba(255, 255, 255, 0.75);
                     font-size: toRem(14);
                     font-weight: 400;
                     margin-top: toRem(17);
                     line-height: toRem(27.5);
+
+                    @include mobile {
+                        text-align: center;
+                        font-size: toRem(12);
+                    }
+
                     /* 196.429% */
                 }
 
                 &__paragraph {
                     color: #FFF;
-                    max-width: toRem(428);
+                    width: toRem(428);
                     margin-top: toRem(30);
                     font-size: toRem(14);
                     font-weight: 400;
                     line-height: 188.4%;
+
                     /* 26.376px */
+                    @include mobile {
+                        text-align: center;
+                        width: toRem(280);
+                        font-size: toRem(12);
+                    }
                 }
             }
 
@@ -45,6 +84,13 @@
                 padding: toRem(69) toRem(39) 0 toRem(72);
                 height: toRem(608);
 
+                @include mobile {
+                    width: toRem(295);
+                    padding: toRem(45) toRem(12)0 toRem(15);
+                    align-items: center;
+                    height: toRem(690);
+                }
+
                 &__main-paragraph {
                     color: #FFF;
                     font-size: toRem(14);
@@ -52,6 +98,14 @@
                     font-weight: 400;
                     line-height: 216.4%;
                     margin-bottom: toRem(24);
+
+                    @include mobile {
+                        text-align: center;
+                        font-size: toRem(12);
+                        width: toRem(268);
+                        /* 25.968px */
+                    }
+
                     /* 30.296px */
                 }
 
@@ -59,6 +113,14 @@
                     font-size: toRem(14);
                     font-weight: 700;
                     line-height: 216.4%;
+
+                    @include mobile {
+                        font-size: toRem(12);
+                        align-self: flex-start;
+                        line-height: 216.4%;
+                        /* 28.132px */
+                    }
+
                     /* 30.296px */
                 }
 
@@ -71,22 +133,34 @@
                         margin-bottom: toRem(18);
 
                         .checked {
-                            border: 1px solid red;
                             width: toRem(17);
                             height: toRem(17);
                         }
 
                         .checked-paragraph {
                             width: toRem(401);
+
+                            @include mobile {
+                                font-weight: 400;
+                                line-height: 175.9%;
+                                /* 21.108px */
+                                width: toRem(218);
+                            }
                         }
                     }
 
                 }
             }
+        }
 
-            &-image {
-                width: toRem(559);
-                height: toRem(749);
+        &-image {
+            width: toRem(559);
+            height: toRem(749);
+
+            @include mobile {
+                margin-top: toRem(144);
+                width: toRem(262);
+                height: toRem(351);
             }
         }
     }
@@ -98,6 +172,14 @@
         height: toRem(648);
         bottom: toRem(471);
         right: toRem(123);
+
+        @include mobile {
+            width: toRem(249);
+            height: toRem(311);
+            right: toRem(68);
+            bottom: toRem(219);
+
+        }
     }
 
 }

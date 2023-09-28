@@ -1,0 +1,122 @@
+@import "../../styles/main.scss";
+
+.register-container {
+    background-color: #150E28;
+    background: url("../../../public/r-f.png") -204.25px 7px / 119.817% 104.852% no-repeat;
+    background-blend-mode: hard-light;
+
+
+
+
+    .register {
+        display: flex;
+        padding: toRem(140) toRem(208) toRem(115) toRem(190);
+        justify-content: space-between;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &__header {
+                font-weight: 600;
+                font-size: toRem(32);
+                margin-bottom: toRem(17);
+            }
+
+            &__paragraph1 {
+                font-weight: 400;
+                font-size: toRem(16);
+                margin-bottom: toRem(17);
+                width: toRem(96);
+            }
+
+            &__paragraph2 {
+                font-weight: 400;
+                font-size: toRem(16);
+                margin-bottom: toRem(21);
+                width: toRem(119);
+            }
+
+            &__paragraph3 {
+                font-weight: 400;
+                font-size: toRem(16);
+                margin-bottom: toRem(22);
+                width: toRem(171);
+            }
+
+            &__paragraph4 {
+                font-weight: 400;
+                font-size: toRem(16);
+                margin-bottom: toRem(35);
+                width: toRem(272);
+            }
+
+            &__icons {
+                display: flex;
+                column-gap: toRem(19);
+                align-items: center;
+                margin-top: toRem(14);
+
+                .icon {
+                    width: toRem(24);
+                    height: toRem(24);
+                }
+            }
+        }
+
+        &__right {
+            .form {
+                border-radius: toRem(12);
+                padding: toRem(75) toRem(90) toRem(67) toRem(90);
+                background: rgba(255, 255, 255, 0.03);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                &-header {
+                    align-self: start;
+                    font-size: toRem(20);
+                    font-weight: 600;
+
+                    &2 {
+                        margin-bottom: toRem(34);
+                    }
+                }
+
+                .inputs {
+                    background-color: transparent;
+                    margin-bottom: toRem(42);
+                    width: toRem(437);
+                    height: toRem(47);
+                    font-size: toRem(16);
+                    padding-left: toRem(29);
+                    border: 1px solid white;
+                }
+
+                .inputs::placeholder {
+                    color: white;
+                }
+
+
+                .message {
+                    textarea {
+                        width: toRem(437);
+                        border: 1px solid white;
+                        background-color: transparent;
+                        width: toRem(437);
+                        height: toRem(119);
+                        resize: none;
+                        padding-left: toRem(15);
+                        margin-bottom: toRem(31);
+
+                        &::placeholder {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

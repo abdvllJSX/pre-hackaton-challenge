@@ -1,9 +1,13 @@
 import ranking from "../../../public/ranking.png"
 import "./policy.scss"
+import PolicyFlare from "../../../public/policy-flare.png";
 
 export default function Policy() {
     return (
         <section className="policy-wrapper">
+            <div className="policy-flare">
+                <img src={PolicyFlare} alt="" />
+            </div>
             <div className="policy">
                 <div className="policy-content">
                     <div className="policy-content__header">
@@ -43,11 +47,11 @@ export default function Policy() {
                                 </p>
                             </div>
                             <div className="content">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" className="checked" viewBox="0 0 17 17" fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" className="checked" viewBox="0 0 17 17" fill="none">
                                     <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100" />
                                     <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2" />
                                 </svg>
-                                <p className="paragraphs">
+                                <p className="paragraphs checked-paragraph">
                                     You are licensed to use the item available at any free source
                                     sites, for your project developement
                                 </p>
