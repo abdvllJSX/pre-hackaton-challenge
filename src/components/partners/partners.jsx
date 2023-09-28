@@ -2,8 +2,8 @@ import winwise from "../../../public/winwise.png";
 import wisper from "../../../public/wisper.png";
 import liberty from "../../../public/Liberty1.png"
 import liberty2 from "../../../public/Liberty2.png";
-import paybox from "../../../public/paybox.png"
-import visualplus from "../../../public/vizual-plus.png"
+import paybox from "../../../public/paybox.png";
+import visualplus from "../../../public/vizual-plus.png";
 import PartnersFlare from "../../../public/partners-flare.png";
 import PartnersFlare2 from "../../../public/partners-flare2.png";
 import "./partners.scss";
